@@ -11,8 +11,27 @@ export default function Header() {
     setIsMobileMenuOpen(!isMobileMenuOpen);
   };
 
+  // This styles object contains the CSS styles for the header element
+  const headerStyles = {
+    display: "flex",
+    justifyContent: "space-between",
+    padding: "1em",
+    position: "relative",
+    zIndex: 10,
+  };
+
+  // This styles object contains the CSS styles for the nav element
+  const navStyles = {
+    position: "absolute",
+    top: "100%",
+    left: 0,
+    right: 0,
+    display: isMobileMenuOpen ? "block" : "none",
+    backgroundColor: "#010101",
+  };
+
   return (
-    <header>
+    <header style={headerStyles}>
       {/* The logo goes here */}
       <img className="logo" src="/vercel.svg" alt="Logo" />
 
@@ -22,7 +41,7 @@ export default function Header() {
 
       {/* The mobile menu goes here. The inline style is used to show or hide the menu
            based on the state of the mobile menu (controlled by the isMobileMenuOpen variable). */}
-      <nav style={{ display: isMobileMenuOpen ? "block" : "none" }}>
+      <nav style={navStyles}>
         {/* The mobile menu items go here */}
         <ul>
           <li>
