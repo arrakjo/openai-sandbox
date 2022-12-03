@@ -1,6 +1,5 @@
 import Link from "next/link";
 import React, { useState } from "react";
-import Logo from "../public/vercel.svg";
 
 export default function Header() {
   // Use the useState hook to keep track of the state of the mobile menu
@@ -35,7 +34,7 @@ export default function Header() {
     <header style={headerStyles}>
       {/* The logo is now a link to the home page */}
       <Link href="/">
-        <img className="logo" src="/vercel.svg" alt="Logo" />
+        <img className="logo" src="/assets/logoipsum-222.svg" alt="Logo" />
       </Link>
 
       {/* The mobile menu toggle goes here. When it is clicked,

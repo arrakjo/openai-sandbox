@@ -8,7 +8,7 @@ function Footer() {
   return (
     <footer style={styles}>
       {/* The logo goes here */}
-      <img className="logo" src="/vercel.svg" alt="Logo" />
+      <img className="logo" src="/assets/logoipsum-222.svg" alt="Logo" />
 
       {/* The policy links go here */}
       <ul>
