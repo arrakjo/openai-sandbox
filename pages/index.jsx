@@ -1,11 +1,10 @@
 import Head from "next/head";
-import Image from "next/image";
-import styles from "../styles/Home.module.css";
 import Header from "../components/Header";
+import Hero from "../components/Hero";
 
 export default function Home() {
   return (
-    <div className={styles.container}>
+    <div>
       <Head>
         <title>Catalyst</title>
         <meta name="description" content="A React website written by OpenAI" />
@@ -13,6 +12,7 @@ export default function Home() {
       </Head>
 
       <Header />
+      <Hero />
     </div>
   );
 }

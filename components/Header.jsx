@@ -14,7 +14,7 @@ export default function Header() {
   return (
     <header>
       {/* The logo goes here */}
-      <img src="/vercel.svg" alt="Logo" />
+      <img className="logo" src="/vercel.svg" alt="Logo" />
 
       {/* The mobile menu toggle goes here. When it is clicked,
            the handleMobileMenuToggle function is called to flip the state of the mobile menu. */}
