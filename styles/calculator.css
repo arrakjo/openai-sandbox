@@ -1,0 +1,46 @@
+.calculator {
+  width: 300px;
+  height: 450px;
+  border: 1px solid var(--secondary-color);
+  border-radius: 5px;
+  background-color: var(--forest-color);
+  padding: 10px;
+  box-sizing: border-box;
+  margin: 1em auto;
+}
+
+.calculator .display {
+  width: 100%;
+  height: 80px;
+  background-color: var(--primary-color);
+  border: 1px solid black;
+  border-radius: 5px;
+  font-size: 32px;
+  text-align: right;
+  padding: 10px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+
+.calculator button {
+  width: 25%;
+  height: 60px;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 5px;
+  font-size: 24px;
+  float: left;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.calculator .digit {
+  background-color: var(--secondary-color);
+}
+
+.calculator .decimal,
+.calculator .operator,
+.calculator .equals {
+  background-color: var(--primary-color);
+}

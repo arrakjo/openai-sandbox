@@ -27,7 +27,8 @@ export default function Header() {
     left: 0,
     right: 0,
     display: isMobileMenuOpen ? "block" : "none",
-    backgroundColor: "#010101",
+    backgroundColor: "#5b3d45",
+    borderBottom: "1px solid black",
   };
 
   return (
@@ -47,13 +48,10 @@ export default function Header() {
         {/* The mobile menu items go here */}
         <ul>
           <li>
-            <a href="#">Home</a>
+            <Link href="/">Home</Link>
           </li>
           <li>
-            <a href="#">About</a>
-          </li>
-          <li>
-            <a href="#">Contact</a>
+            <Link href="/calculator">Calculator</Link>
           </li>
         </ul>
       </nav>
