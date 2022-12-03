@@ -20,7 +20,7 @@ export default function Hero() {
       {/* The inline styles here apply the styles from the textStyles object to the h1 and p elements */}
       <h1 style={textStyles}>Welcome to Our Website!</h1>
       <p style={textStyles}>
-        We're excited to share our amazing products with you.
+        We&apos;re excited to share our amazing products with you.
       </p>
 
       <button>Learn More</button>
