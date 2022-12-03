@@ -32,5 +32,6 @@ a {
   }
   .logo {
     filter: invert(1);
+    width: 200px;
   }
 }
