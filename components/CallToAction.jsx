@@ -1,8 +1,12 @@
 import React from "react";
 
+const styles = {
+  padding: 20,
+};
+
 function CallToAction() {
   return (
-    <section>
+    <section style={styles}>
       {/* The full-width card goes here */}
       <div>
         <h2>Ready to take the next step?</h2>

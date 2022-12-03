@@ -4,6 +4,7 @@ import Hero from "../components/Hero";
 import Introduction from "../components/Introduction";
 import CallToAction from "../components/CallToAction";
 import Footer from "../components/Footer";
+import ContactForm from "../components/ContactForm";
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
       <Hero />
       <Introduction />
       <CallToAction />
+      <ContactForm />
       <Footer />
     </div>
   );

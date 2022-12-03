@@ -1,8 +1,12 @@
 import React from "react";
 
+const styles = {
+  padding: "1em",
+};
+
 function Footer() {
   return (
-    <footer>
+    <footer style={styles}>
       {/* The logo goes here */}
       <img className="logo" src="/vercel.svg" alt="Logo" />
 

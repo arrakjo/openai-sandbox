@@ -1,8 +1,12 @@
 import React from "react";
 
+const styles = {
+  padding: "1em",
+};
+
 function Introduction() {
   return (
-    <section>
+    <section style={styles}>
       <h2>Introduction</h2>
 
       <div>

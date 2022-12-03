@@ -4,10 +4,10 @@ import React from "react";
 const divStyles = {
   position: "relative",
   height: "300px",
-  backgroundImage: "url(../assets/hero.jpg)",
+  backgroundImage: "url(/assets/hero.jpg)",
   backgroundSize: "cover",
   backgroundPosition: "center",
-  padding: 20,
+  padding: "1em",
 };
 
 // This styles object contains the CSS styles for the text elements
