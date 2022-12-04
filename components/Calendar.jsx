@@ -1,12 +1,28 @@
-import React from "react";
+import React, { useState } from "react";
 
 function Calendar() {
   // Get the current date
   const currentDate = new Date();
 
-  // Get the current month and year
-  const month = currentDate.getMonth();
-  const year = currentDate.getFullYear();
+  // State to keep track of the current month and year
+  const [month, setMonth] = useState(currentDate.getMonth());
+  const [year, setYear] = useState(currentDate.getFullYear());
+
+  // Function to move to the previous month
+  function previousMonth() {
+    setMonth(month === 0 ? 11 : month - 1);
+    if (month === 0) {
+      setYear(year - 1);
+    }
+  }
+
+  // Function to move to the next month
+  function nextMonth() {
+    setMonth(month === 11 ? 0 : month + 1);
+    if (month === 11) {
+      setYear(year + 1);
+    }
+  }
 
   // Get the number of days in the current month
   const daysInMonth = new Date(year, month + 1, 0).getDate();
@@ -31,7 +47,19 @@ function Calendar() {
 
   // Add cells for each day of the current month
   for (let day of days) {
-    cells.push(<td key={day}>{day}</td>);
+    let className = "";
+    if (
+      day === currentDate.getDate() &&
+      month === currentDate.getMonth() &&
+      year === currentDate.getFullYear()
+    ) {
+      className = "highlighted";
+    }
+    cells.push(
+      <td key={day} className={className}>
+        {day}
+      </td>
+    );
 
     // If the current cell is the last in the row, add the row to the array of rows and reset the array of cells
     if (cells.length === 7) {
@@ -52,7 +80,16 @@ function Calendar() {
 
   return (
     <div className="calendar">
-      <h1>Calendar</h1>
+      <div style={{ display: "flex", justifyContent: "space-between" }}>
+        <button onClick={previousMonth}>Previous</button>
+        <h1>
+          {new Date(year, month, 1).toLocaleString("default", {
+            month: "long",
+          })}{" "}
+          {year}
+        </h1>
+        <button onClick={nextMonth}>Next</button>
+      </div>
       <table>
         <thead>
           <tr>
@@ -69,6 +106,15 @@ function Calendar() {
       </table>
 
       <style jsx>{`
+        h1 {
+          flex: 5;
+          text-align: center;
+        }
+
+        button {
+          flex: 1;
+        }
+
         table {
           border-collapse: collapse;
           width: 100%;

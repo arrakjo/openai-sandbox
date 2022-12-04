@@ -37,3 +37,12 @@
   background-color: var(--primary-color);
   color: white;
 }
+
+.calendar .highlighted {
+  background-color: var(--secondary-color);
+  color: white;
+}
+
+.calendar button {
+  border-radius: 0;
+}

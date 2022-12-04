@@ -26,6 +26,15 @@ a {
 
 button {
   cursor: pointer;
+  background-color: var(--forest-color);
+  outline: none;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 1rem 1.5rem;
+  color: black;
+  font-family: "Urbanist", sans-serif;
+  font-weight: 600;
+  font-size: 1.2rem;
 }
 
 nav ul {
@@ -45,6 +54,16 @@ nav ul {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+h1 {
+  font-size: 1.3rem;
+}
+
+@media screen and (min-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
 }
 
 @media (prefers-color-scheme: dark) {
