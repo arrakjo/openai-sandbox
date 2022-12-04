@@ -53,6 +53,9 @@ export default function Header() {
           <li>
             <Link href="/calculator">Calculator</Link>
           </li>
+          <li>
+            <Link href="/calendar">Calendar</Link>
+          </li>
         </ul>
       </nav>
     </header>
