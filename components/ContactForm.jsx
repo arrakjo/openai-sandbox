@@ -21,7 +21,7 @@ function ContactForm() {
     flexFlow: "column",
     alignItems: "center",
     width: "100%",
-    gap: "1em",
+    padding: "2rem 1rem",
   };
 
   const inputStyles = {

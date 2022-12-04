@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Urbanist:wght@300;400;500;600;700&display=swap");
 @import "calculator.css";
 @import "calendar.css";
+@import "login.css";
 
 html,
 body {
@@ -42,10 +43,13 @@ nav ul {
   display: flex;
   flex-flow: column;
   align-items: flex-end;
-  list-style: none;
   gap: 1em;
   font-size: 1.2em;
   font-weight: 600;
+}
+
+ul {
+  list-style: none;
 }
 
 .content {

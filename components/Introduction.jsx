@@ -1,7 +1,20 @@
 import React from "react";
 
 const styles = {
-  padding: "1em",
+  padding: "2rem 1rem",
+  cards: {
+    display: "flex",
+    gap: "1rem",
+    flexWrap: "wrap",
+  },
+  card: {
+    flex: 1,
+    padding: "1rem",
+    borderRadius: "1rem",
+    backgroundColor: "rgba(230, 255, 255, 1)",
+    minWidth: "280px",
+    color: "black",
+  },
 };
 
 function Introduction() {
@@ -9,9 +22,9 @@ function Introduction() {
     <section style={styles}>
       <h2>Introduction</h2>
 
-      <div>
+      <div style={styles.cards}>
         {/* The first card goes here */}
-        <div>
+        <div style={styles.card}>
           <h3>Card 1</h3>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
@@ -20,7 +33,7 @@ function Introduction() {
         </div>
 
         {/* The second card goes here */}
-        <div>
+        <div style={styles.card}>
           <h3>Card 2</h3>
           <p>
             Pellentesque rutrum massa quis eros pharetra, ac aliquet nibh
@@ -29,7 +42,7 @@ function Introduction() {
         </div>
 
         {/* The third card goes here */}
-        <div>
+        <div style={styles.card}>
           <h3>Card 3</h3>
           <p>
             Suspendisse potenti. Donec convallis sodales mollis. Suspendisse

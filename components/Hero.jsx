@@ -7,7 +7,7 @@ const divStyles = {
   backgroundImage: "url(/assets/hero.jpg)",
   backgroundSize: "cover",
   backgroundPosition: "center",
-  padding: "1em",
+  padding: "2rem 1rem",
 };
 
 // This styles object contains the CSS styles for the text elements

@@ -15,7 +15,7 @@ export default function Header() {
   const headerStyles = {
     display: "flex",
     justifyContent: "space-between",
-    padding: "1em",
+    padding: "2rem 1rem",
     position: "relative",
     zIndex: 10,
   };
@@ -55,6 +55,9 @@ export default function Header() {
           </li>
           <li>
             <Link href="/calendar">Calendar</Link>
+          </li>
+          <li>
+            <Link href="/login">Login</Link>
           </li>
         </ul>
       </nav>

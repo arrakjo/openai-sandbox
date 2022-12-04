@@ -79,55 +79,57 @@ function Calendar() {
   }
 
   return (
-    <div className="calendar">
-      <div style={{ display: "flex", justifyContent: "space-between" }}>
-        <button onClick={previousMonth}>Previous</button>
-        <h1>
-          {new Date(year, month, 1).toLocaleString("default", {
-            month: "long",
-          })}{" "}
-          {year}
-        </h1>
-        <button onClick={nextMonth}>Next</button>
+    <div className="content">
+      <div className="calendar">
+        <div style={{ display: "flex", justifyContent: "space-between" }}>
+          <button onClick={previousMonth}>Previous</button>
+          <h1>
+            {new Date(year, month, 1).toLocaleString("default", {
+              month: "long",
+            })}{" "}
+            {year}
+          </h1>
+          <button onClick={nextMonth}>Next</button>
+        </div>
+        <table>
+          <thead>
+            <tr>
+              <th>Sun</th>
+              <th>Mon</th>
+              <th>Tue</th>
+              <th>Wed</th>
+              <th>Thu</th>
+              <th>Fri</th>
+              <th>Sat</th>
+            </tr>
+          </thead>
+          <tbody>{rows}</tbody>
+        </table>
+
+        <style jsx>{`
+          h1 {
+            flex: 5;
+            text-align: center;
+          }
+
+          button {
+            flex: 1;
+          }
+
+          table {
+            border-collapse: collapse;
+            width: 100%;
+          }
+
+          th,
+          td {
+            border: 1px solid black;
+            padding: 0.5em;
+            text-align: center;
+            vertical-align: middle;
+          }
+        `}</style>
       </div>
-      <table>
-        <thead>
-          <tr>
-            <th>Sun</th>
-            <th>Mon</th>
-            <th>Tue</th>
-            <th>Wed</th>
-            <th>Thu</th>
-            <th>Fri</th>
-            <th>Sat</th>
-          </tr>
-        </thead>
-        <tbody>{rows}</tbody>
-      </table>
-
-      <style jsx>{`
-        h1 {
-          flex: 5;
-          text-align: center;
-        }
-
-        button {
-          flex: 1;
-        }
-
-        table {
-          border-collapse: collapse;
-          width: 100%;
-        }
-
-        th,
-        td {
-          border: 1px solid black;
-          padding: 0.5em;
-          text-align: center;
-          vertical-align: middle;
-        }
-      `}</style>
     </div>
   );
 }

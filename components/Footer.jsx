@@ -1,7 +1,9 @@
 import React from "react";
 
 const styles = {
-  padding: "1em",
+  padding: "2rem 1rem",
+  display: "flex",
+  justifyContent: "space-between",
 };
 
 function Footer() {
@@ -21,7 +23,7 @@ function Footer() {
       </ul>
 
       {/* The paragraph element goes here */}
-      <p>Created by OpenAI</p>
+      <p>Created using responses from OpenAI ChatGPT</p>
     </footer>
   );
 }

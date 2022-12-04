@@ -23,7 +23,7 @@
 }
 
 .calculator button {
-  width: 25%;
+  width: calc(25% - 2px);
   height: 60px;
   background-color: white;
   border: 1px solid black;
@@ -35,6 +35,10 @@
   box-sizing: border-box;
 }
 
+.calculator button:hover {
+  opacity: 0.9;
+}
+
 .calculator .digit {
   background-color: var(--secondary-color);
 }
@@ -43,4 +47,12 @@
 .calculator .operator,
 .calculator .equals {
   background-color: var(--primary-color);
+}
+
+.calculator .digit,
+.calculator .decimal,
+.calculator .operator,
+.calculator .equals {
+  color: white;
+  margin: 1px;
 }
