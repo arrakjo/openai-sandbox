@@ -59,6 +59,9 @@ export default function Header() {
           <li>
             <Link href="/login">Login</Link>
           </li>
+          <li>
+            <Link href="/admin">Draggable</Link>
+          </li>
         </ul>
       </nav>
     </header>

@@ -1,0 +1,27 @@
+.draggable {
+  background-color: var(--forest-color);
+  padding: 1rem 2rem;
+  overflow: auto;
+}
+
+.draggable-field {
+  background-color: var(--primary-color);
+}
+
+.draggable-field:hover {
+  z-index: 9999;
+}
+
+.draggable-add {
+  background-color: var(--secondary-color);
+  width: 80px;
+  height: 80px;
+  display: grid;
+  place-content: center;
+  color: white;
+  font-size: 2rem;
+  font-weight: 400;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
