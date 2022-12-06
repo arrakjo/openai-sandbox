@@ -62,6 +62,9 @@ export default function Header() {
           <li>
             <Link href="/admin">Draggable</Link>
           </li>
+          <li>
+            <Link href="/flow">React Flow</Link>
+          </li>
         </ul>
       </nav>
     </header>
